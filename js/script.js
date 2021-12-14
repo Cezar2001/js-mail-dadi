@@ -17,14 +17,17 @@ if (flag) {
 }
 
 //dadi
-let humanNumber = Math.floor(Math.random()*7);
-let computerNumber = Math.floor(Math.random()*7);
+let humanNumber = Math.floor(Math.random()*((6+1) - 1));
+let computerNumber = Math.floor(Math.random()*((6+1) - 1));
 
 console.log(humanNumber);
 console.log(computerNumber);
 
  if (humanNumber < computerNumber) {
      console.log('Mi dispiace, hai perso!')
- } else {
+ } else if (computerNumber < humanNumber) {
      console.log('Complimenti, sei un campione!')
+ }
+  else {
+     console.log('Pari')
  }
